@@ -22,7 +22,9 @@ a:not([href]):not([class]):hover {
     background-color: rgba(0, 0, 0, .1);
 }
 
-.section-participantes .card {
+.section-participantes button {
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, .25);
     --bs-text-opacity: 1;
     color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
