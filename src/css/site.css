@@ -1,33 +1,39 @@
 a {
     text-decoration: none;
-}
-    a.card {
-        cursor: pointer;
-    }
-.section-programa {
-    background-color: rgba(0,0,0,.25);
+    cursor: pointer !important;
 }
 
-    .section-programa .card {
-        background-color: rgba(0,0,0,.25);
-        --bs-text-opacity: 1;
-        color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)) !important;
-    }
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+    cursor: pointer !important;
+}
+
+.section-programa {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.section-programa .card {
+    background-color: rgba(0, 0, 0, .25);
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
 
 .section-participantes {
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, .1);
 }
 
-    .section-participantes .card {
-        background-color: rgba(0,0,0,.25);
-        --bs-text-opacity: 1;
-        color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)) !important;
-    }
-.section-encuesta {
-    background-color: rgba(255,255,255,1);
+.section-participantes .card {
+    background-color: rgba(0, 0, 0, .25);
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
+
+.section-encuesta {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 .section-redes {
-    background-color: rgb(220,220,220);
+    background-color: rgb(220, 220, 220);
 }
 
 .btn-youtube {
@@ -58,7 +64,7 @@ footer {
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0, 0, 0, .75);
     width: 6vh;
     height: 6vh;
     top: 50%;
@@ -125,45 +131,45 @@ footer {
     animation: 1s ease 0s 1 initAnimation;
 }
 
-    .book:hover {
-        transform: rotateY(0deg);
-    }
+.book:hover {
+    transform: rotateY(0deg);
+}
 
-    .book > :first-child {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: red;
-        width: 133px;
-        height: 200px;
-        transform: translateZ(25px);
-        border: 1px solid #888;
-        background-color: #ddd;
-        border-radius: 0 2px 2px 0;
-        box-shadow: 5px 5px 20px #000;
-    }
+.book> :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 133px;
+    height: 200px;
+    transform: translateZ(25px);
+    border: 1px solid #888;
+    background-color: #ddd;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 5px 5px 20px #000;
+}
 
-    .book::before {
-        position: absolute;
-        content: ' ';
-        background-color: blue;
-        left: 0;
-        top: 3px;
-        width: 32px;
-        height: 196px;
-        transform: translateX(113px) rotateY(90deg);
-        background: linear-gradient(90deg, #fff 0%, #f9f9f9 5%, #fff 10%, #f9f9f9 15%, #fff 20%, #f9f9f9 25%, #fff 30%, #f9f9f9 35%, #fff 40%, #f9f9f9 45%, #fff 50%, #f9f9f9 55%, #fff 60%, #f9f9f9 65%, #fff 70%, #f9f9f9 75%, #fff 80%, #f9f9f9 85%, #fff 90%, #f9f9f9 95%, #fff 100% );
-    }
+.book::before {
+    position: absolute;
+    content: ' ';
+    background-color: blue;
+    left: 0;
+    top: 3px;
+    width: 32px;
+    height: 196px;
+    transform: translateX(113px) rotateY(90deg);
+    background: linear-gradient(90deg, #fff 0%, #f9f9f9 5%, #fff 10%, #f9f9f9 15%, #fff 20%, #f9f9f9 25%, #fff 30%, #f9f9f9 35%, #fff 40%, #f9f9f9 45%, #fff 50%, #f9f9f9 55%, #fff 60%, #f9f9f9 65%, #fff 70%, #f9f9f9 75%, #fff 80%, #f9f9f9 85%, #fff 90%, #f9f9f9 95%, #fff 100%);
+}
 
-    .book::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: ' ';
-        width: 133px;
-        height: 200px;
-        transform: translateZ(-25px);
-        background-color: #aaa;
-        border-radius: 0 2px 2px 0;
-        /*box-shadow: -10px 0 50px 10px #666;*/
-    }
+.book::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 133px;
+    height: 200px;
+    transform: translateZ(-25px);
+    background-color: #aaa;
+    border-radius: 0 2px 2px 0;
+    /*box-shadow: -10px 0 50px 10px #666;*/
+}
