@@ -1,3 +1,7 @@
+* {
+    text-align: justify;
+}
+
 a {
     text-decoration: none;
     cursor: pointer !important;
